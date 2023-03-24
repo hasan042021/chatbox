@@ -1,94 +1,146 @@
 {
-    "users": [
+  "users": [
+    {
+      "email": "joy@dev.com",
+      "password": "$2a$10$s/CPwm9f.af9QVwNfptLAOeHTYbWgYe6gfZJz3PM5kf1mSCAoEyM.",
+      "name": "joy",
+      "id": 1
+    },
+    {
+      "email": "akash@learnwithsumit.com",
+      "password": "$2a$10$CtHS.yCGS80jiuZx8yKEI.5zdiZykHF/6aPTDqpHl6ZqEFGISOHKO",
+      "name": "Akash Ahmed",
+      "id": 2
+    },
+    {
+      "email": "saad@learnwithsumit.com",
+      "password": "$2a$10$CtHS.yCGS80jiuZx8yKEI.5zdiZykHF/6aPTDqpHl6ZqEFGISOHKO",
+      "name": "Saad Hasan",
+      "id": 3
+    },
+    {
+      "email": "hasan@dev.com",
+      "password": "$2a$10$s/CPwm9f.af9QVwNfptLAOeHTYbWgYe6gfZJz3PM5kf1mSCAoEyM.",
+      "name": "Hasan",
+      "id": 4
+    },
+    {
+      "email": "hasan.dev04@gmail.com",
+      "password": "$2a$10$DrSxk02iet7d6xzmBOjiZOlOlVVZSXiCAORi70ZRCiPc8lhnlzWh6",
+      "name": "hasan",
+      "id": 5
+    },
+    {
+      "email": "joy@dev.com",
+      "password": "$2a$10$xGoXBq/pwZ0WvNdM6xqy/elX8KSYqa/F1TfcSEpzL/SKm3WKQiu/u",
+      "name": "joy",
+      "id": 6
+    },
+    {
+      "email": "joy1@dev.com",
+      "password": "$2a$10$NMWr0VPEgO0sCJ0CrS2zgutEaIc7YdGEGlLXzarWdThWIpkcFoWZC",
+      "name": "joy1",
+      "id": 7
+    },
+    {
+      "email": "joy2@dev.com",
+      "password": "$2a$10$OKtC/ku.1VbLHfgjsIW5Y.S6qeA7xM8qX8apmr5YOea9tTlOptOAK",
+      "name": "joy2",
+      "id": 8
+    },
+    {
+      "email": "joy3@dev.com",
+      "password": "$2a$10$QZQmVS2cQjzLjJTHC7OV/.3jk5O5D4ZjxPqE4bOaTiXXYr2f.F/PS",
+      "name": "joy3",
+      "id": 9
+    }
+  ],
+  "conversations": [
+    {
+      "id": 1,
+      "participants": "joy@dev.com-akash@learnwithsumit.com",
+      "users": [
         {
-            "email": "sumit@learnwithsumit.com",
-            "password": "$2a$10$CtHS.yCGS80jiuZx8yKEI.5zdiZykHF/6aPTDqpHl6ZqEFGISOHKO",
-            "name": "Sumit Saha",
-            "id": 1
+          "email": "joy@dev.com",
+          "name": "joy",
+          "id": 1
         },
         {
-            "email": "akash@learnwithsumit.com",
-            "password": "$2a$10$CtHS.yCGS80jiuZx8yKEI.5zdiZykHF/6aPTDqpHl6ZqEFGISOHKO",
-            "name": "Akash Ahmed",
-            "id": 2
-        },
-        {
-            "email": "saad@learnwithsumit.com",
-            "password": "$2a$10$CtHS.yCGS80jiuZx8yKEI.5zdiZykHF/6aPTDqpHl6ZqEFGISOHKO",
-            "name": "Saad Hasan",
-            "id": 3
+          "email": "akash@learnwithsumit.com",
+          "name": "Akash Ahmed",
+          "id": 2
         }
-    ],
-    "conversations": [
+      ],
+      "message": "How are you?",
+      "timestamp": 1661976143678
+    },
+    {
+      "id": 2,
+      "participants": "joy@dev.com-saad@learnwithsumit.com",
+      "users": [
         {
-            "id": 1,
-            "participants": "sumit@learnwithsumit.com-akash@learnwithsumit.com",
-            "users": [
-                {
-                    "email": "sumit@learnwithsumit.com",
-                    "name": "Sumit Saha",
-                    "id": 1
-                },
-                {
-                    "email": "akash@learnwithsumit.com",
-                    "name": "Akash Ahmed",
-                    "id": 2
-                }
-            ],
-            "message": "How are you?",
-            "timestamp": 1661976143678
+          "email": "joy@dev.com",
+          "name": "joy",
+          "id": 1
         },
         {
-            "id": 2,
-            "participants": "sumit@learnwithsumit.com-saad@learnwithsumit.com",
-            "users": [
-                {
-                    "email": "sumit@learnwithsumit.com",
-                    "name": "Sumit Saha",
-                    "id": 1
-                },
-                {
-                    "email": "akash@learnwithsumit.com",
-                    "name": "Saad Hasan",
-                    "id": 3
-                }
-            ],
-            "message": "How are you?",
-            "timestamp": 1661976143678
+          "email": "saad@learnwithsumit.com",
+          "name": "Saad Hasan",
+          "id": 3
         }
-    ],
-    "messages": [
-        {
-            "id": 1,
-            "conversationId": 1,
-            "sender": {
-                "email": "sumit@learnwithsumit.com",
-                "name": "Sumit Saha",
-                "id": 1
-            },
-            "receiver": {
-                "email": "akash@learnwithsumit.com",
-                "name": "Akash Ahmed",
-                "id": 2
-            },
-            "message": "Hello",
-            "timestamp": 1661976143557
-        },
-        {
-            "id": 2,
-            "conversationId": 1,
-            "sender": {
-                "email": "akash@learnwithsumit.com",
-                "name": "Akash Ahmed",
-                "id": 2
-            },
-            "receiver": {
-                "email": "sumit@learnwithsumit.com",
-                "name": "Sumit Saha",
-                "id": 1
-            },
-            "message": "How are you?",
-            "timestamp": 1661976143678
-        }
-    ]
+      ],
+      "message": "Hi",
+      "timestamp": 1661976143678
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "conversationId": 2,
+      "sender": {
+        "email": "joy@dev.com",
+        "name": "joy",
+        "id": 1
+      },
+      "receiver": {
+        "email": "saad@learnwithsumit.com",
+        "name": "Saad Hasan",
+        "id": 2
+      },
+      "message": "Hello",
+      "timestamp": 1661976143557
+    },
+    {
+      "id": 2,
+      "conversationId": 1,
+      "sender": {
+        "email": "akash@learnwithsumit.com",
+        "name": "Akash Ahmed",
+        "id": 2
+      },
+      "receiver": {
+        "email": "joy@dev.com",
+        "name": "joy",
+        "id": 1
+      },
+      "message": "How are you?",
+      "timestamp": 1661976143678
+    },
+    {
+      "id": 3,
+      "conversationId": 2,
+      "sender": {
+        "email": "saad@learnwithsumit.com",
+        "name": "Saad Hasan",
+        "id": 2
+      },
+      "receiver": {
+        "email": "joy@dev.com",
+        "name": "joy",
+        "id": 1
+      },
+      "message": "Hi",
+      "timestamp": 1660976143678
+    }
+  ]
 }
