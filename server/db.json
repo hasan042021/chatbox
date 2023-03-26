@@ -53,6 +53,12 @@
       "password": "$2a$10$QZQmVS2cQjzLjJTHC7OV/.3jk5O5D4ZjxPqE4bOaTiXXYr2f.F/PS",
       "name": "joy3",
       "id": 9
+    },
+    {
+      "email": "numayra@dev.com",
+      "password": "$2a$10$vDygZ44Wwhiw.ypHb5khYubMhZ8QG6VbJUFTck4vVfHcP2FyTWAs2",
+      "name": "numayra",
+      "id": 10
     }
   ],
   "conversations": [
