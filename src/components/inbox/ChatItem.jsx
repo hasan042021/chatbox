@@ -19,7 +19,9 @@ export default function ChatItem({ partnerName, partnerEmail, conversation }) {
             {moment(timestamp).fromNow()}
           </span>
         </div>
-        <span className="block ml-2 text-sm text-gray-600">{lastMessage}</span>
+        <span className="block ml-2 text-sm text-gray-600">
+          {lastMessage.substr(0, 100)}
+        </span>
       </div>
     </div>
   );

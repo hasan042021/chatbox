@@ -8,7 +8,7 @@ export default function ChatHead({ message }) {
 
   const partnerEmail = sender.email === email ? receiver.email : sender.email;
   const partnerName = sender.email === email ? receiver.name : sender.name;
-  console.log(message, partnerName);
+
   return (
     <div className="relative flex items-center p-3 border-b border-gray-300">
       <Avatar identifier={partnerEmail} />

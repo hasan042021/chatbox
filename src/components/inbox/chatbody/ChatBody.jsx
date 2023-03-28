@@ -1,6 +1,7 @@
 // import Blank from "./Blank";
 import { useParams } from "react-router-dom";
 import { useGetMessagesQuery } from "../../../features/messages/messagesApi";
+import Error from "../../ui/Error";
 import ChatHead from "./ChatHead";
 import Messages from "./Messages";
 import Options from "./Options";
@@ -17,7 +18,7 @@ export default function ChatBody() {
   } else if (!isLoading && isError) {
     content = (
       <div>
-        <Error message={error?.data} />
+        <Error message="There was a problem" />
       </div>
     );
   } else if (!isLoading && !isError && messages?.length === 0) {
@@ -27,7 +28,7 @@ export default function ChatBody() {
       <>
         <ChatHead message={messages[0]} />
         <Messages messages={messages} />
-        <Options />
+        <Options info={messages[0]} />
       </>
     );
   }
