@@ -12,7 +12,7 @@ Chatbox is a real-time chat application built by React,RTK Query,JSON server, So
 - Private and public routing
 - Logout funcionality
 
-## Tools overvies
+## Tools overview
 
 **React**: _Used to build the frontend with component based approach._  
 **Tailwind Css**: _used for frontend styling._  
