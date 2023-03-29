@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ReactLoading from "react-loading";
 import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import logoImage from "../assets/images/lws-logo-light.svg";
@@ -103,13 +104,22 @@ export default function Login() {
             </div>
 
             <div>
-              <button
-                type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
-                disabled={isLoading}
-              >
-                Sign in
-              </button>
+              {isLoading ? (
+                <div className="flex justify-center items-center">
+                  <ReactLoading type="bars" color="#6D28D9" />
+                  <span className="align-middle font-bold text-indigo-700 ">
+                    Signing In
+                  </span>
+                </div>
+              ) : (
+                <button
+                  type="submit"
+                  className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-violet-500"
+                  disabled={isLoading}
+                >
+                  Sign in
+                </button>
+              )}
             </div>
 
             {error && <Error message={error} />}
