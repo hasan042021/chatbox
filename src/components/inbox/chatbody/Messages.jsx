@@ -56,7 +56,7 @@ export default function Messages({
         >
           {messages
             .slice()
-            .sort((a, b) => a.timestamp - b.timestamp)
+            .sort((a, b) => b.timestamp - a.timestamp)
             .map((message, idx) => {
               const { message: lastMessage, id, sender } = message || {};
               const justify = sender.email !== email ? "start" : "end";

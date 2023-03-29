@@ -7,6 +7,7 @@ const app = express();
 const server = http.createServer(app);
 const io = require("socket.io")(server);
 
+
 global.io = io;
 
 const router = jsonServer.router("db.json");
@@ -25,6 +26,7 @@ router.render = (req, res) => {
   }
   if (path.includes("/messages") && (method === "POST" || method === "PATCH")) {
     // emit socket event
+
     io.emit("message", {
       data: res.locals.data,
     });

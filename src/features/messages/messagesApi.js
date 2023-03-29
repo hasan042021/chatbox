@@ -32,7 +32,9 @@ export const messagesApi = apiSlice.injectEndpoints({
         try {
           await cacheDataLoaded;
           socket.on("message", (data) => {
+            console.log(data);
             updateCachedData((draft) => {
+              console.log(JSON.stringify(draft));
               if (arg == data?.data?.conversationId) {
                 draft.data.push(data.data);
               } else {

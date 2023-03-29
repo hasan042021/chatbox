@@ -68,25 +68,28 @@ export default function ChatItems() {
         loader={<h4>Loading...</h4>}
         height={window.innerHeight - 129}
       >
-        {conversations.slice().map((conversation) => {
-          const { id, message, timestamp } = conversation;
-          const { email } = user || {};
-          const { name, email: partnerEmail } = getPartnerInfo(
-            conversation.users,
-            email
-          );
-          return (
-            <li key={id}>
-              <Link to={`/inbox/${id}`}>
-                <ChatItem
-                  partnerName={name}
-                  partnerEmail={partnerEmail}
-                  conversation={conversation}
-                />
-              </Link>
-            </li>
-          );
-        })}
+        {conversations
+          .slice()
+          .sort((a, b) => b.timestamp - a.timestamp)
+          .map((conversation) => {
+            const { id, message, timestamp } = conversation;
+            const { email } = user || {};
+            const { name, email: partnerEmail } = getPartnerInfo(
+              conversation.users,
+              email
+            );
+            return (
+              <li key={id}>
+                <Link to={`/inbox/${id}`}>
+                  <ChatItem
+                    partnerName={name}
+                    partnerEmail={partnerEmail}
+                    conversation={conversation}
+                  />
+                </Link>
+              </li>
+            );
+          })}
       </InfiniteScroll>
     );
   }

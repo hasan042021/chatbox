@@ -108,7 +108,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
               "getConversations",
               arg.sender,
               (draft) => {
-                draft.push(conversation.data);
+                draft.data.push(conversation.data);
               }
             )
           );
@@ -118,7 +118,7 @@ export const conversationsApi = apiSlice.injectEndpoints({
               "getMessages",
               res.conversationId.toString(),
               (draft) => {
-                draft.push(res);
+                draft.data.push(res.data);
               }
             )
           );
