@@ -2,7 +2,7 @@
 
 Chatbox is a real-time chat application built by React,RTK Query,JSON server, Socket.io with authorizaion and authentication.Live site link [Chatbox Real Time](https://chatbox-real-time.netlify.app/)
 
-## features
+## Features
 
 - User registration and login with JWT token
 - Login persistency
