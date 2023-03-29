@@ -40,7 +40,7 @@ export default function ChatItems() {
     if (totalCount > 0) {
       const more =
         Math.ceil(
-          totalCount / import.meta.env.VITE_REACT_APP_MESSAGES_PER_PAGE
+          totalCount / import.meta.env.VITE_REACT_APP_CONVERSATIONS_PER_PAGE
         ) > page;
       setHasMore(more);
     }
